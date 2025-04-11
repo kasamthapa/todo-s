@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #133229;
+    /* background:
+      linear-gradient(135deg, rgba(1, 1, 15, 0.6), rgba(106, 187, 237, 0.6)),
+      radial-gradient(circle at 54% 113%, rgba(253, 161, 74, 0.3), rgba(219, 7, 238, 0)),
+      radial-gradient(circle at 28% 0, rgba(89, 12, 182, 0.3), rgba(255, 42, 42, 0)); */
+    color: #fff; /* Purple text */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1,p{
+    text-align: center;
+
+  }
+  .container {
+    background: rgba(217, 209, 215, 0.1); /* Semi-transparent white */
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px; /* Slightly wider for todo list */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center; /* Center titles */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  #todo-input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #8A2BE2; /* Purple */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #9370DB; /* Lighter purple on hover */
+  }
+  
+  #response-message {
+    margin-top: 20px;
+    text-align: center;
+    color: #FFD700; /* Gold */
+    font-size: 14px;
+  }
+  
+  a {
+    color: #FFD700; /* Gold links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Todo List Styles */
+  #todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  #todo-list li {
+    display: flex;
+    align-items: center; /* Vertically align checkbox, text, and button */
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #todo-list li input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and text */
+  }
+  
+  #todo-list li span {
+    flex-grow: 1; /* Text takes up available space */
+    color: white; /* Ensure text is readable */
+    font-size: 14px;
+  }
+  
+  #todo-list li button {
+    padding: 6px 12px;
+    background-color: #FFF; /* White delete button */
+    color: #8A2BE2; /* Purple text */
+    margin-left: 10px; /* Space from text */
+    transition: background-color 0.3s;
+  }
+  
+  #todo-list li button:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+  }
+  
+  #response-message a {
+    color: #FFD700; /* Gold for logout link */
+    text-decoration: underline;
+  }
